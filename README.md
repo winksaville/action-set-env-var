@@ -2,7 +2,7 @@
 
 ```
       - name: step2
-        uses: ./actions/docker-local-set-env-var
+        uses: winksaville/gha-set-env-var
         with:
           env-name: ${{ env.name1 }}
           env-value: ${{ runner.os }}-python-${{ env.name1 }}
